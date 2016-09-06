@@ -1,0 +1,70 @@
+Result=eye(3)
+
+Result =
+
+     1     0     0
+     0     1     0
+     0     0     1
+
+clc
+diary RicardoPascualPascualEjercicio3
+I=eye(3);
+%Asigno la matriz identidad a la variable I
+C=[2 4 5;6 7 8;9 10 11];
+%Crear matriz C con sus valores
+%Realizar suma de ambas Matrices
+Result=I+C
+
+Result =
+
+     3     4     5
+     6     8     8
+     9    10    12
+
+clc
+Result=zeros(10)
+
+Result =
+
+  Columns 1 through 8
+
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+
+  Columns 9 through 10
+
+     0     0
+     0     0
+     0     0
+     0     0
+     0     0
+     0     0
+     0     0
+     0     0
+     0     0
+     0     0
+
+Result=zeros(10)
+
+Result =
+
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+
+diary off

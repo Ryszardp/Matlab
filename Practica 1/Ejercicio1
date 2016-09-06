@@ -1,0 +1,55 @@
+Result=186*34
+
+Result =
+
+        6324
+
+clc
+Result=17456^0.4
+
+Result =
+
+   49.7483
+
+clc
+Result=(38.879)*(45^-5)
+
+Result =
+
+  2.1069e-007
+
+Result=38.879*(45^-5)
+
+Result =
+
+  2.1069e-007
+
+Result=sin(pi/8)
+
+Result =
+
+    0.3827
+
+clc
+Result=sin(pi/8)
+
+Result =
+
+    0.3827
+
+clc
+sqrt(4+(tan(2*(pi/4))))
+
+ans =
+
+  1.2779e+008
+
+clc
+Result=sqrt(4+(tan(2*(pi/4))))
+
+Result =
+
+  1.2779e+008
+
+clc
+diary off

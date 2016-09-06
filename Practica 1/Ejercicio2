@@ -1,0 +1,176 @@
+A=[2 -1 4;6 9 -4;0 2 3];
+B=[1 3 4;5 7 9;9 10 11];
+clc
+Result=A*B
+
+Result =
+
+    33    39    43
+    15    41    61
+    37    44    51
+
+clc
+Result=A-B
+
+Result =
+
+     1    -4     0
+     1     2   -13
+    -9    -8    -8
+
+clc
+Result=A+B
+
+Result =
+
+     3     2     8
+    11    16     5
+     9    12    14
+
+clc
+%Creamos un vector U y V con sus respectivos valores
+U=[1 2 3 4 5];
+V=[6 9 18 3];
+clc
+%Realizamos la multiplicación con las Variables ya definidas
+Result=U*V
+{??? Error using ==> mtimes
+Inner matrix dimensions must agree.
+} 
+%Las dimensiones no son iguales por ello existe un error 
+clc
+%Realizamos la Suma con las Variables ya definidas
+Result=U+V
+{??? Error using ==> plus
+Matrix dimensions must agree.
+} 
+U
+
+U =
+
+     1     2     3     4     5
+
+V
+
+V =
+
+     6     9    18     3
+
+%Las dimensiones no son iguales por ello marca un error
+clc
+%Se realiza una multiplicación de 10 por todo el vector U
+Result=10*U
+
+Result =
+
+    10    20    30    40    50
+
+clc
+%Nueva asignación de valores a la matriz A en su posición A(2,3) 
+A(2,3)=9;
+%Nueva asignación de valores a la matriz B en su posición A(3,3)
+B(3,3)=2;
+A:B
+
+ans =
+
+   Empty matrix: 1-by-0
+
+A,B
+
+A =
+
+     2    -1     4
+     6     9     9
+     0     2     3
+
+
+B =
+
+     1     3     4
+     5     7     9
+     9    10     2
+
+A B
+{??? Error: "A" was previously used as a variable,
+ conflicting with its use here as the name of a function
+ or command.
+ See <a href="matlab: helpview([docroot '/techdoc/matlab_prog/matlab_prog.map'],'function_call_command_syntax')">MATLAB Programming, "How MATLAB Recognizes Function
+ Calls That Use Command Syntax"</a> for details.
+} 
+clc
+%Nueva asignación de valores a la matriz A en su posición A(2,3)
+A(2,3)=9;
+%Nueva asignación de valores a la matriz B en su posición B(3,3)
+B(3,3)=2;
+A,B
+
+A =
+
+     2    -1     4
+     6     9     9
+     0     2     3
+
+
+B =
+
+     1     3     4
+     5     7     9
+     9    10     2
+
+clc
+%Multiplicación de AxB con los valores ya modificados
+Result=A*B
+
+Result =
+
+    33    39     7
+   132   171   123
+    37    44    24
+
+%Resta de A-B con los valores ya modificados
+Result=A-B
+
+Result =
+
+     1    -4     0
+     1     2     0
+    -9    -8     1
+
+%Suma de A+B con los valores ya modificados
+Result=A+B
+
+Result =
+
+     3     2     8
+    11    16    18
+     9    12     5
+
+clc
+%Asignar al Vector K los valores de las posiciones de
+%La matriz U en su posición U(1,3) V(1,4) y B(2,1)
+K=[U(1,3) V(1,4) B(2,1)]
+
+K =
+
+     3     3     5
+
+clc
+R=linspace(-5,5,11)
+
+R =
+
+  Columns 1 through 9
+
+    -5    -4    -3    -2    -1     0     1     2     3
+
+  Columns 10 through 11
+
+     4     5
+
+%Función linspace
+%Primer argumento que recibe es desde donde comenzará
+%Segundo argumento que recibe es hasta donde finalizará
+%Tercer argumento cuantas secciones debe de formar
+%Como deseamos que aparezcan en intervalos de 1, necesitamos 11 secciones
+diary off
